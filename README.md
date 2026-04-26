@@ -8,7 +8,7 @@
 
 I'm a passionate **Full Stack Developer** specializing in building robust backend systems with **Spring Boot** and creating dynamic user interfaces with **React**. I love solving complex problems and turning ideas into reality through clean, efficient code.
 
-- 🔭 Currently working on **Online Food Delivery System** using Spring Boot & React
+- 🔭 Currently working on **Building scalable applications** using Spring Boot & React
 - 🌱 Learning **Microservices Architecture**, **Docker**, and **Cloud Technologies**
 - 💡 Interested in **System Design**, **RESTful APIs**, and **Database Optimization**
 - 🎯 Goal: Contributing to open-source projects and building impactful applications
