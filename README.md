@@ -1,151 +1,286 @@
-# Hi there, I'm Anush Chinnasamy 👋
-
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=2E9EF7&center=true&vCenter=true&width=700&lines=Full+Stack+%2F+Distributed+Systems+Developer;Spring+Boot+%7C+Node.js+%7C+React;Microservices%2C+Kafka%2C+Event-Driven+Architecture;Building+Agentic+AI+into+Real+Products" alt="Typing SVG" />
+
+# Anush Chinnasamy
+
+**Java Backend Engineer&nbsp;·&nbsp;GenAI Engineer**
+
+Building distributed backend systems — microservices, event-driven pipelines, and real-time infrastructure — and shipping GenAI features (RAG, LLM tool-calling) on top of them.
+
+`Java` `Spring Boot` `Spring Cloud` `Kafka` `PostgreSQL` `Redis` `Docker` `RAG / LLMs`
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anushchinnasamy)
+[![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/Anushchinnasamy)
+[![Email](https://img.shields.io/badge/Email-000000?style=flat-square&logo=gmail&logoColor=white)](mailto:anushchinnasamy@gmail.com)
+
 </div>
 
-## 🚀 About Me
+<br>
 
-I'm a passionate **Full Stack Developer** who builds distributed, microservices-based systems end to end — Spring Boot and Node.js on the backend, React on the front, with real event streaming, caching, and AI integration layered in rather than bolted on. I love solving complex problems and turning ideas into reality through clean, efficient code.
+## About
 
-- 🔭 Currently building **ChatFlow**, a WhatsApp-style messaging platform (11 microservices, Kafka, Cassandra, WebRTC calling) as a distributed-systems portfolio piece
-- 🤖 Shipping **agentic AI features** — tool-calling assistants backed by both Google Gemini and a local Ollama model, so the same product works with or without a paid API key
-- 🌱 Learning **Kubernetes** (hand-written manifests for ChatFlow's full topology) and going deeper on **event-driven architecture**
-- 💡 Interested in **System Design**, **service-to-service auth/authorization patterns**, and **database performance**
-- 🎯 Goal: Contributing to open-source projects and building impactful applications
-- ⚡ Fun fact: I believe good code is like a good joke – it needs no explanation!
+I build production-shaped backend systems in Java and Spring Boot — services that talk to each other over Kafka, discover each other through Eureka, share config through a Config Server, and stay observable through tracing and health checks, not just services that compile.
 
-## 🛠️ Tech Stack
+Recent focus:
 
-### Languages
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+- **Distributed systems** — service discovery, centralized config, API gateways, event-driven communication, distributed locking under contention
+- **System design under load** — flash-sale traffic patterns, race conditions, concurrency-safe reservations, load/chaos testing as part of the build, not an afterthought
+- **Generative AI** — RAG pipelines over vector search, LLM-based ranking and extraction, both hosted (Gemini) and local (Ollama) models
+- **Full-stack delivery** — React/TypeScript frontends wired to the same backends, so the systems above ship as usable products, not just APIs
 
-### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
-![Radix UI](https://img.shields.io/badge/Radix_UI-161618?style=for-the-badge&logo=radixui&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+<br>
 
-### Backend
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
-![Spring Cloud](https://img.shields.io/badge/Spring_Cloud-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket%2FSTOMP-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)
+## Tech Stack
 
-### Distributed Systems & Messaging
-![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
-![Microservices](https://img.shields.io/badge/Microservices-2496ED?style=for-the-badge&logo=serverfault&logoColor=white)
-![Eureka](https://img.shields.io/badge/Eureka_%2F_Service_Discovery-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=for-the-badge&logo=webrtc&logoColor=white)
+<table>
+<tr>
+<td valign="top" width="50%">
 
-### AI / LLM Integration
-![Google Gemini](https://img.shields.io/badge/Gemini_API-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama_(local_LLM)-000000?style=for-the-badge&logo=ollama&logoColor=white)
-![Agentic Tool-Calling](https://img.shields.io/badge/Agentic_Tool--Calling-412991?style=for-the-badge&logo=openai&logoColor=white)
-
-### Database & Storage
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Cassandra](https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&logo=apachecassandra&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![MinIO/S3](https://img.shields.io/badge/MinIO_%2F_S3-C72E49?style=for-the-badge&logo=minio&logoColor=white)
-![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=for-the-badge&logo=flyway&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-
-### DevOps & Tools
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anushchinnasamy&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anushchinnasamy&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="170"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anushchinnasamy&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</div>
-
-## 🏆 Featured Projects
-
-### 💬 [ChatFlow](https://github.com/Anushchinnasamy/chatflow)
-A WhatsApp-style messaging platform built as a distributed-systems portfolio piece — 1:1 and group messaging, media, voice/video calls, 24h status/stories, and an AI assistant contact
-- **Tech Stack:** 11 Spring Boot microservices, Kafka, Cassandra, Redis, MinIO, WebSocket/STOMP, WebRTC, Ollama (local LLM), nginx, Docker Compose, Kubernetes manifests
-- **Highlights:** Event-driven message delivery (Kafka → Cassandra + live push), phone+OTP auth with RS256 JWT and 2FA, presigned media uploads, a Kafka-consuming AI responder backed by a local LLM
-
-### 🍽️ [foodapp](https://github.com/Anushchinnasamy/foodapp)
-A Swiggy/Zomato-style food ordering platform with a fully agentic AI assistant
-- **Tech Stack:** 9 Spring Boot microservices (Eureka, Config Server, Gateway), PostgreSQL/Flyway, React 19 + TypeScript + Tailwind v4, GitHub Actions CI
-- **Highlights:** Role-scoped AI assistant (26 tools) that can search, order, and manage the platform on a user's behalf, swappable between Google Gemini and a local Ollama backend; Razorpay payment integration; full order/delivery lifecycle with automatic nearest-partner assignment
-
-### 🎓 [InternFlow-AI](https://github.com/Anushchinnasamy/InternFlow-AI) + [Frontend](https://github.com/Anushchinnasamy/InternFlow-AI-Frontend)
-Backend for the full unpaid-internship lifecycle — referral through closure/certificate — with server-side RBAC, an NDA hard gate, and 9 AI-assisted actions
-- **Tech Stack:** Node.js, Express, TypeScript, Prisma, Google Gemini API, PDF generation, React 19 + Vite + Radix UI + TanStack Query
-- **Highlights:** Full audit trail, drag-and-drop workflow Kanban, AI-assisted document/PDF generation
-
-### 🔗 [URL Shortener](https://github.com/Anushchinnasamy/UrlShortener)
-Production-shaped Base62 URL shortener with click analytics
-- **Tech Stack:** Spring Boot, PostgreSQL, Redis (best-effort caching), Spring Security + JWT, springdoc-openapi, Docker
-- **Highlights:** Redis caching layer that degrades gracefully if Redis is down, Swagger/OpenAPI docs, Actuator health checks
-
-## 📈 Contribution Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anushchinnasamy&theme=tokyo-night&hide_border=true&area=true" alt="Contribution Graph" />
-</div>
-
-## 🎯 Current Focus
-
-```javascript
-const currentFocus = {
-    building: ["Distributed messaging systems (Kafka + Cassandra)", "Agentic AI tool-calling assistants"],
-    learning: ["Kubernetes", "Event-driven architecture at scale"],
-    exploring: ["WebRTC", "Local LLMs as a free/unlimited fallback to paid APIs"],
-    improving: ["System design", "Service-to-service auth patterns"]
-};
+**Backend**
+```
+Java · Spring Boot · Spring Cloud
+Spring Security · REST APIs
+Microservices · Node.js / Express
 ```
 
-## 📫 Let's Connect
+**Data**
+```
+PostgreSQL · Redis · pgvector
+Prisma
+```
+
+**Messaging & Infrastructure**
+```
+Apache Kafka · Docker · Podman
+Eureka · Spring Cloud Config
+Zipkin (distributed tracing)
+```
+
+</td>
+<td valign="top" width="50%">
+
+**GenAI**
+```
+LLM Tool-Calling · RAG
+Embeddings · Vector Search
+Google Gemini · Ollama (local LLMs)
+```
+
+**Frontend**
+```
+React · TypeScript · Vite
+HTML · CSS · TanStack Query
+```
+
+**Tooling**
+```
+Maven · Git · Postman / Newman
+k6 (load testing) · GitHub Actions
+```
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## Featured Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### SpicyEat
+Single-brand food ordering platform — production-shaped, not a toy CRUD app.
+
+**Stack:** Spring Boot · API Gateway · PostgreSQL · Redis · Kafka · Stripe · React/TS
+
+**Engineering:** 8 independently-deployed microservices (auth, user, menu, cart, order, payment, delivery, notification) behind a single gateway; event-driven order/payment flow over Kafka; JWT auth at the edge
+
+[`Anushchinnasamy/SpicyEat`](https://github.com/Anushchinnasamy/SpicyEat)
+
+</td>
+<td width="50%" valign="top">
+
+### Ticket
+Distributed, BookMyShow-style event ticket booking backend, built and load-tested for flash-sale traffic.
+
+**Stack:** Spring Boot · Kafka · PostgreSQL · Redis · MinIO · k6
+
+**Engineering:** Redis-backed distributed locking for seat reservation — verified **zero overselling across 300K+ requests at 5,000 req/s**; automated chaos testing
+
+[`Anushchinnasamy/ticket-booking-system`](https://github.com/Anushchinnasamy/ticket-booking-system)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### RecruitFlow AI
+AI-powered recruitment platform — candidates are ranked against job descriptions with RAG, not keyword matching.
+
+**Stack:** Spring Boot microservices · Kafka · Ollama · pgvector · Eureka · Config Server · Zipkin · Resilience4j
+
+**Engineering:** RAG-based candidate ranking; saga-orchestrated enrichment (sources external candidates when the internal pool is too thin, with timeout-based forward recovery); full service discovery + centralized config + distributed tracing
+
+[`Anushchinnasamy/RecruitFlowAI`](https://github.com/Anushchinnasamy/RecruitFlowAI)
+
+</td>
+<td width="50%" valign="top">
+
+### InternFlow AI
+Backend + frontend for the full unpaid-internship lifecycle — referral through closure and certificate — with AI assistance built in as an advisory layer.
+
+**Stack:** Node.js · Express · TypeScript · Prisma · PostgreSQL · Google Gemini API · React/Vite
+
+**Engineering:** 17-state lifecycle machine enforced through a single `transition()` gate; server-side RBAC across 9 roles; full audit trail; AI-assisted resume parsing, evaluation, and an internal chatbot — every AI action is logged and human-reviewable, never autonomous
+
+[`Anushchinnasamy/InternFlow-AI`](https://github.com/Anushchinnasamy/InternFlow-AI) · [`Frontend`](https://github.com/Anushchinnasamy/InternFlow-AI-Frontend)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Trip Meter
+Earnings-truth API for Indian gig-economy riders — computes what a rider actually keeps after fuel, maintenance, EMI, and insurance, per day/hour/km.
+
+**Stack:** Spring Boot · PostgreSQL · Redis · JWT
+
+**Engineering:** Modular monolith, package-by-feature (not microservices by default); transactional-outbox pattern for async follow-up work instead of a message broker; derive-on-read calculation engines over immutable raw entries
+
+[`Anushchinnasamy/TripMeterBackend`](https://github.com/Anushchinnasamy/TripMeterBackend)
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## Engineering Highlights
+
+| | | |
+|---|---|---|
+| Microservices | Event-Driven Architecture | Distributed Systems |
+| REST API Design | Service Discovery (Eureka) | Centralized Config |
+| Distributed Locking | Rate Limiting | Caching |
+| Database Design | Distributed Tracing | Load & Chaos Testing |
+| RAG | LLM Tool-Calling | Vector Search |
+
+<br>
+
+## Architecture Showcase
+
+**SpicyEat** — gateway-fronted microservices, one Postgres/Redis/Kafka backbone per environment:
+
+```mermaid
+flowchart LR
+    Client["React Client"] -->|HTTPS + JWT| GW["API Gateway"]
+    GW --> AUTH["Auth Service"]
+    GW --> USER["User Service"]
+    GW --> MENU["Menu Service"]
+    GW --> CART["Cart Service"]
+    GW --> ORDER["Order Service"]
+    GW --> PAY["Payment Service<br/>(Stripe)"]
+    GW --> DEL["Delivery Service"]
+
+    ORDER -.->|order events| KAFKA[("Kafka")]
+    PAY -.->|payment events| KAFKA
+    KAFKA -.-> NOTIFY["Notification Service"]
+
+    AUTH --> PG[("PostgreSQL")]
+    USER --> PG
+    MENU --> PG
+    CART --> PG
+    ORDER --> PG
+    PAY --> PG
+    DEL --> PG
+    AUTH --> REDIS[("Redis")]
+```
+
+**RecruitFlow AI** — event-driven candidate matching with a saga-orchestrated enrichment fallback:
+
+```mermaid
+flowchart LR
+    GW["API Gateway"] --> JOB["Job Service"]
+    GW --> CAND["Candidate Service"]
+    GW --> WF["Workflow Service"]
+
+    JOB -.->|job.created| KAFKA[("Kafka")]
+    KAFKA -.-> MATCH["Matching Service<br/>(pgvector + RAG)"]
+    MATCH -->|embed / rank| AI["AI Service<br/>(Ollama)"]
+    MATCH -->|pool too small| ENRICH["Enrichment Service<br/>(external sourcing)"]
+    ENRICH -.->|candidate.created| KAFKA
+    MATCH -.->|matching.completed| KAFKA
+    KAFKA -.-> NOTIFY["Notification Service"]
+    WF -.->|decision.made| KAFKA
+
+    EUREKA[("Eureka<br/>service registry")] -.-> GW
+    ZIPKIN[("Zipkin<br/>tracing")] -.-> GW
+```
+
+**Ticket** — distributed locking guards a hot 50-seat show against a flash-sale crowd:
+
+```mermaid
+flowchart LR
+    Client["Client"] --> GW["API Gateway"]
+    GW --> USER["User Service"]
+    GW --> EVENT["Event Service"]
+    GW --> BOOK["Booking Service"]
+    GW --> PAY["Payment Service"]
+
+    BOOK -->|tryLock seat| REDIS[("Redis<br/>seat lock")]
+    BOOK -->|claim seat| EVENT
+    BOOK -.->|booking.created| KAFKA[("Kafka")]
+    KAFKA -.-> NOTIFY["Notification Service"]
+
+    USER --> PG[("PostgreSQL<br/>per service")]
+    EVENT --> PG
+    BOOK --> PG
+    PAY --> PG
+    EVENT -->|media / assets| MINIO[("MinIO")]
+```
+
+**InternFlow AI** — a single state machine gates every lifecycle transition; AI actions are advisory, not autonomous:
+
+```mermaid
+flowchart LR
+    Client["React Client"] --> API["Express API<br/>(RBAC middleware)"]
+    API --> SM["transition()<br/>state machine"]
+    SM --> DB[("PostgreSQL<br/>via Prisma")]
+    API -->|resume parse / eval / chatbot| GEMINI["Google Gemini<br/>(logged + human-reviewed)"]
+    API --> AUDIT[("Audit trail")]
+    API --> ADAPT["Adapters:<br/>e-sign · AD · email · ID"]
+```
+
+**Trip Meter** — modular monolith; a transactional outbox stands in for a message broker:
+
+```mermaid
+flowchart LR
+    Client["Client"] -->|JWT| API["Spring Boot<br/>(package-by-feature)"]
+    API --> RAW["Raw entries<br/>shift / fuel / expense"]
+    RAW --> PG[("PostgreSQL")]
+    API --> CALC["Calculation engines<br/>earnings · mileage · EV"]
+    CALC -->|derive on read| PG
+    API --> OUTBOX["Outbox table"]
+    OUTBOX -->|poller| JOBS["Jobs<br/>EMI sweep · reminders"]
+    API --> REDIS[("Redis<br/>rate limits · cache")]
+```
+
+<br>
+
+## GitHub Activity
 
 <div align="center">
-  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anushchinnasamy)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anushchinnasamy)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anushchinnasamy@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://your-portfolio-url.com)
-
+<img src="https://github-readme-stats.vercel.app/api?username=Anushchinnasamy&show_icons=true&hide_border=true&theme=default&count_private=true" height="165" alt="GitHub stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anushchinnasamy&layout=compact&hide_border=true&theme=default" height="165" alt="Top languages" />
 </div>
 
-## 💼 Open to Opportunities
+<br>
 
-I'm actively looking for opportunities in **Full Stack Development**, **Backend Engineering**, and **Software Development** roles. If you have an exciting project or opportunity, feel free to reach out!
-
----
+## Contact
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Anushchinnasamy&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
-</div>
 
-<div align="center">
-  
-### ⭐ From [Anushchinnasamy](https://github.com/Anushchinnasamy)
-
-**"Code is like humor. When you have to explain it, it's bad."** – Cory House
+[LinkedIn](https://www.linkedin.com/in/anushchinnasamy) &nbsp;·&nbsp; [anushchinnasamy@gmail.com](mailto:anushchinnasamy@gmail.com) &nbsp;·&nbsp; [GitHub](https://github.com/Anushchinnasamy)
 
 </div>
