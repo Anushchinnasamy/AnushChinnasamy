@@ -133,10 +133,11 @@ Earnings-truth API for Indian gig riders — real take-home after fuel/EMI/insur
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Anushchinnasamy&show_icons=true&hide_border=true&bg_color=101210&title_color=9FFF6E&icon_color=9FFF6E&text_color=EDEDE8&count_private=true" height="165" alt="GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anushchinnasamy&layout=compact&hide_border=true&bg_color=101210&title_color=9FFF6E&text_color=EDEDE8" height="165" alt="Top languages" />
-
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anushchinnasamy&hide_border=true&background=101210&stroke=1E211E&ring=9FFF6E&fire=9FFF6E&currStreakLabel=9FFF6E&sideLabels=EDEDE8&currStreakNum=EDEDE8&sideNums=EDEDE8&dates=8A8D87" alt="GitHub streak stats" />
+
+<br><br>
+
+<img src="https://ghchart.rshah.org/9FFF6E/Anushchinnasamy" alt="Anush's GitHub contribution graph" width="100%" />
 
 </div>
 
