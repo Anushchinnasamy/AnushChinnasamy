@@ -1,16 +1,14 @@
 <div align="center">
 
-# Anush Chinnasamy
+<a href="https://portfolio-eta-one-1hhe8hokhj.vercel.app/">
+  <img src="./banner.svg" alt="Anush Chinnasamy — Java Backend Developer / GenAI Engineer" width="100%" />
+</a>
 
-**Java Backend Engineer&nbsp;·&nbsp;GenAI Engineer**
-
-Building distributed backend systems — microservices, event-driven pipelines, and real-time infrastructure — and shipping GenAI features (RAG, LLM tool-calling) on top of them.
-
-`Java` `Spring Boot` `Spring Cloud` `Kafka` `PostgreSQL` `Redis` `Docker` `RAG / LLMs`
+<br><br>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-9FFF6E?style=flat-square&logo=vercel&logoColor=black)](https://portfolio-eta-one-1hhe8hokhj.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anushchinnasamy)
-[![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/Anushchinnasamy)
+[![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode.com/u/anushchinnasamy/)
 [![Email](https://img.shields.io/badge/Email-000000?style=flat-square&logo=gmail&logoColor=white)](mailto:anushchinnasamy@gmail.com)
 
 </div>
@@ -19,14 +17,7 @@ Building distributed backend systems — microservices, event-driven pipelines, 
 
 ## About
 
-I build production-shaped backend systems in Java and Spring Boot — services that talk to each other over Kafka, discover each other through Eureka, share config through a Config Server, and stay observable through tracing and health checks, not just services that compile.
-
-Recent focus:
-
-- **Distributed systems** — service discovery, centralized config, API gateways, event-driven communication, distributed locking under contention
-- **System design under load** — flash-sale traffic patterns, race conditions, concurrency-safe reservations, load/chaos testing as part of the build, not an afterthought
-- **Generative AI** — RAG pipelines over vector search, LLM-based ranking and extraction, both hosted (Gemini) and local (Ollama) models
-- **Full-stack delivery** — React/TypeScript frontends wired to the same backends, so the systems above ship as usable products, not just APIs
+I build distributed backend systems in Java and Spring Boot — services that talk to each other over Kafka, own their own databases, and stay correct under concurrent load — and ship GenAI features (RAG, LLM tool-calling) on top of them.
 
 <br>
 
@@ -36,46 +27,45 @@ Recent focus:
 <tr>
 <td valign="top" width="50%">
 
-**Backend**
+**Core Backend**
 ```
-Java · Spring Boot · Spring Cloud
-Spring Security · REST APIs
-Microservices · Node.js / Express
-```
-
-**Data**
-```
-PostgreSQL · Redis · pgvector
-Prisma
+Java 17 · Spring Boot · FastAPI
+REST APIs · SQL · Microservices
 ```
 
-**Messaging & Infrastructure**
+**Databases**
 ```
-Apache Kafka · Docker · Podman
-Eureka · Spring Cloud Config
-Zipkin (distributed tracing)
+PostgreSQL · Neon · Cassandra
+Redis · pgvector
+```
+
+**Messaging / Real-time**
+```
+Kafka · WebSocket · WebRTC
+Redis Pub/Sub
 ```
 
 </td>
 <td valign="top" width="50%">
 
+**Resilience**
+```
+Redisson · SAGA · Idempotency Keys
+Resilience4j · Caching
+```
+
 **GenAI**
 ```
-LLM Tool-Calling · RAG
-Embeddings · Vector Search
-Google Gemini · Ollama (local LLMs)
+RAG · Vector Embeddings
+LLM Integration · Prompt Engineering
+AI Agents / Function Calling
 ```
 
-**Frontend**
+**Cloud / DevOps**
 ```
-React · TypeScript · Vite
-HTML · CSS · TanStack Query
-```
-
-**Tooling**
-```
-Maven · Git · Postman / Newman
-k6 (load testing) · GitHub Actions
+Azure (AZ-900, AZ-204) · Docker
+GitHub Actions · Harness CI/CD
+Render · Vercel
 ```
 
 </td>
@@ -84,72 +74,72 @@ k6 (load testing) · GitHub Actions
 
 <br>
 
-## Featured Projects
+## Selected Projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### SpicyEat
-Single-brand food ordering platform — production-shaped, not a toy CRUD app.
+### 01 · Ticket Booking System — `Backend`
+Distributed ticketing platform: Redis + Redisson distributed locking, Kafka, Resilience4j circuit breakers, JWT, ZXing/PDFBox tickets. 5 Spring Boot microservices.
 
-**Stack:** Spring Boot · API Gateway · PostgreSQL · Redis · Kafka · Stripe · React/TS
+**Result:** flash-sale load test at 300,998 requests / 5,000 req/sec across 50 seats, zero overselling. Chaos test confirms the circuit breaker opens correctly under failure.
 
-**Engineering:** 8 independently-deployed microservices (auth, user, menu, cart, order, payment, delivery, notification) behind a single gateway; event-driven order/payment flow over Kafka; JWT auth at the edge
+`Java` `Spring Boot` `Redis` `Redisson` `Kafka` `Resilience4j` `JWT`
 
-[`Anushchinnasamy/SpicyEat`](https://github.com/Anushchinnasamy/SpicyEat)
+[`Anushchinnasamy/ticket-booking-system`](https://github.com/Anushchinnasamy/ticket-booking-system)
 
 </td>
 <td width="50%" valign="top">
 
-### Ticket
-Distributed, BookMyShow-style event ticket booking backend, built and load-tested for flash-sale traffic.
+### 02 · Spicyeat — `Backend`
+9 Spring Boot microservices (gateway, auth, user, menu, cart, order, payment, delivery, notifications), database-per-service PostgreSQL with Flyway, Redis caching and gateway rate limiting, Kafka transactional outbox for order/payment events, Stripe payments. React + TypeScript + Vite frontend on Vercel.
 
-**Stack:** Spring Boot · Kafka · PostgreSQL · Redis · MinIO · k6
+**Result:** strict database-per-service ownership; order/payment events survive service crashes without distributed transactions.
 
-**Engineering:** Redis-backed distributed locking for seat reservation — verified **zero overselling across 300K+ requests at 5,000 req/s**; automated chaos testing
+`Spring Boot` `Kafka` `Redis` `PostgreSQL` `Stripe` `React` `TypeScript`
 
-[`Anushchinnasamy/ticket-booking-system`](https://github.com/Anushchinnasamy/ticket-booking-system)
+[`Anushchinnasamy/SpicyEat`](https://github.com/Anushchinnasamy/SpicyEat)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### RecruitFlow AI
-AI-powered recruitment platform — candidates are ranked against job descriptions with RAG, not keyword matching.
+### 03 · RecruitFlow AI — `GenAI`
+8 Spring Boot microservices, RAG pipeline over local LLMs with vector embeddings, pgvector, full Spring Cloud stack (Eureka, Config Server, Gateway, Zipkin, Resilience4j), JWT auth.
 
-**Stack:** Spring Boot microservices · Kafka · Ollama · pgvector · Eureka · Config Server · Zipkin · Resilience4j
+**Result:** RAG-based resume-to-role matching backed by a complete Spring Cloud microservice stack.
 
-**Engineering:** RAG-based candidate ranking; saga-orchestrated enrichment (sources external candidates when the internal pool is too thin, with timeout-based forward recovery); full service discovery + centralized config + distributed tracing
+`Spring Boot` `RAG` `LLM` `pgvector` `Eureka` `Zipkin`
 
 [`Anushchinnasamy/RecruitFlowAI`](https://github.com/Anushchinnasamy/RecruitFlowAI)
 
 </td>
 <td width="50%" valign="top">
 
-### InternFlow AI
-Backend + frontend for the full unpaid-internship lifecycle — referral through closure and certificate — with AI assistance built in as an advisory layer.
+### 04 · Baaki (TripMeter) — `Backend`
+Earnings-truth API for Indian gig riders — real take-home after fuel/EMI/insurance. Modular monolith, Spring Boot, PostgreSQL/Neon, Redis, transactional outbox pattern.
 
-**Stack:** Node.js · Express · TypeScript · Prisma · PostgreSQL · Google Gemini API · React/Vite
+**Result:** deliberate modular-monolith architecture with an outbox pattern for reliable event delivery, sized right for a single-owner project.
 
-**Engineering:** 17-state lifecycle machine enforced through a single `transition()` gate; server-side RBAC across 9 roles; full audit trail; AI-assisted resume parsing, evaluation, and an internal chatbot — every AI action is logged and human-reviewable, never autonomous
+`Spring Boot` `PostgreSQL` `Neon` `Redis` `Outbox Pattern`
 
-[`Anushchinnasamy/InternFlow-AI`](https://github.com/Anushchinnasamy/InternFlow-AI) · [`Frontend`](https://github.com/Anushchinnasamy/InternFlow-AI-Frontend)
+[`Anushchinnasamy/TripMeterBackend`](https://github.com/Anushchinnasamy/TripMeterBackend)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### Trip Meter
-Earnings-truth API for Indian gig-economy riders — computes what a rider actually keeps after fuel, maintenance, EMI, and insurance, per day/hour/km.
+### 05 · InternFlow AI — `Backend`
+17-step state machine for the unpaid-internship lifecycle, Node.js/Express/TypeScript/Prisma/PostgreSQL, LLM-powered, 9 AI-assisted actions, NDA hard gate, full audit trail.
 
-**Stack:** Spring Boot · PostgreSQL · Redis · JWT
+**Result:** every AI action is advisory, logged, and human-reviewable — never autonomous.
 
-**Engineering:** Modular monolith, package-by-feature (not microservices by default); transactional-outbox pattern for async follow-up work instead of a message broker; derive-on-read calculation engines over immutable raw entries
+`Node.js` `Express` `TypeScript` `Prisma` `PostgreSQL` `LLM`
 
-[`Anushchinnasamy/TripMeterBackend`](https://github.com/Anushchinnasamy/TripMeterBackend)
+[`Anushchinnasamy/InternFlow-AI`](https://github.com/Anushchinnasamy/InternFlow-AI) · [`Frontend`](https://github.com/Anushchinnasamy/InternFlow-AI-Frontend)
 
 </td>
 </tr>
@@ -157,21 +147,9 @@ Earnings-truth API for Indian gig-economy riders — computes what a rider actua
 
 <br>
 
-## Engineering Highlights
-
-| | | |
-|---|---|---|
-| Microservices | Event-Driven Architecture | Distributed Systems |
-| REST API Design | Service Discovery (Eureka) | Centralized Config |
-| Distributed Locking | Rate Limiting | Caching |
-| Database Design | Distributed Tracing | Load & Chaos Testing |
-| RAG | LLM Tool-Calling | Vector Search |
-
-<br>
-
 ## Architecture Showcase
 
-**SpicyEat** — gateway-fronted microservices, one Postgres/Redis/Kafka backbone per environment:
+**Spicyeat** — gateway-fronted microservices, database-per-service, Kafka outbox for order/payment events:
 
 ```mermaid
 flowchart LR
@@ -184,42 +162,22 @@ flowchart LR
     GW --> PAY["Payment Service<br/>(Stripe)"]
     GW --> DEL["Delivery Service"]
 
-    ORDER -.->|order events| KAFKA[("Kafka")]
+    ORDER -.->|order events| KAFKA[("Kafka<br/>outbox")]
     PAY -.->|payment events| KAFKA
     KAFKA -.-> NOTIFY["Notification Service"]
 
-    AUTH --> PG[("PostgreSQL")]
+    AUTH --> PG[("PostgreSQL<br/>per service")]
     USER --> PG
     MENU --> PG
     CART --> PG
     ORDER --> PG
     PAY --> PG
     DEL --> PG
-    AUTH --> REDIS[("Redis")]
+    MENU --> REDIS[("Redis<br/>cache")]
+    GW --> REDIS
 ```
 
-**RecruitFlow AI** — event-driven candidate matching with a saga-orchestrated enrichment fallback:
-
-```mermaid
-flowchart LR
-    GW["API Gateway"] --> JOB["Job Service"]
-    GW --> CAND["Candidate Service"]
-    GW --> WF["Workflow Service"]
-
-    JOB -.->|job.created| KAFKA[("Kafka")]
-    KAFKA -.-> MATCH["Matching Service<br/>(pgvector + RAG)"]
-    MATCH -->|embed / rank| AI["AI Service<br/>(Ollama)"]
-    MATCH -->|pool too small| ENRICH["Enrichment Service<br/>(external sourcing)"]
-    ENRICH -.->|candidate.created| KAFKA
-    MATCH -.->|matching.completed| KAFKA
-    KAFKA -.-> NOTIFY["Notification Service"]
-    WF -.->|decision.made| KAFKA
-
-    EUREKA[("Eureka<br/>service registry")] -.-> GW
-    ZIPKIN[("Zipkin<br/>tracing")] -.-> GW
-```
-
-**Ticket** — distributed locking guards a hot 50-seat show against a flash-sale crowd:
+**Ticket Booking System** — distributed locking guards a hot 50-seat show against a flash-sale crowd:
 
 ```mermaid
 flowchart LR
@@ -238,7 +196,20 @@ flowchart LR
     EVENT --> PG
     BOOK --> PG
     PAY --> PG
-    EVENT -->|media / assets| MINIO[("MinIO")]
+```
+
+**RecruitFlow AI** — RAG-based candidate ranking behind a full Spring Cloud stack:
+
+```mermaid
+flowchart LR
+    GW["API Gateway"] --> JOB["Job Service"]
+    GW --> CAND["Candidate Service"]
+    GW --> MATCH["Matching Service<br/>(pgvector + RAG)"]
+    MATCH -->|embed / rank| LLM["Local LLM"]
+
+    EUREKA[("Eureka<br/>service registry")] -.-> GW
+    CONFIG[("Config Server")] -.-> GW
+    ZIPKIN[("Zipkin<br/>tracing")] -.-> GW
 ```
 
 **InternFlow AI** — a single state machine gates every lifecycle transition; AI actions are advisory, not autonomous:
@@ -246,35 +217,35 @@ flowchart LR
 ```mermaid
 flowchart LR
     Client["React Client"] --> API["Express API<br/>(RBAC middleware)"]
-    API --> SM["transition()<br/>state machine"]
+    API --> SM["transition()<br/>17-step state machine"]
     SM --> DB[("PostgreSQL<br/>via Prisma")]
-    API -->|resume parse / eval / chatbot| GEMINI["Google Gemini<br/>(logged + human-reviewed)"]
+    API -->|resume parse / eval / chatbot| LLM["LLM<br/>(logged + human-reviewed)"]
     API --> AUDIT[("Audit trail")]
-    API --> ADAPT["Adapters:<br/>e-sign · AD · email · ID"]
 ```
 
-**Trip Meter** — modular monolith; a transactional outbox stands in for a message broker:
+**Baaki (TripMeter)** — modular monolith; a transactional outbox stands in for a message broker:
 
 ```mermaid
 flowchart LR
-    Client["Client"] -->|JWT| API["Spring Boot<br/>(package-by-feature)"]
+    Client["Client"] -->|JWT| API["Spring Boot<br/>modular monolith"]
     API --> RAW["Raw entries<br/>shift / fuel / expense"]
-    RAW --> PG[("PostgreSQL")]
-    API --> CALC["Calculation engines<br/>earnings · mileage · EV"]
-    CALC -->|derive on read| PG
+    RAW --> PG[("PostgreSQL / Neon")]
     API --> OUTBOX["Outbox table"]
-    OUTBOX -->|poller| JOBS["Jobs<br/>EMI sweep · reminders"]
-    API --> REDIS[("Redis<br/>rate limits · cache")]
+    OUTBOX -->|poller| JOBS["Async jobs"]
+    API --> REDIS[("Redis")]
 ```
 
 <br>
 
-## GitHub Activity
+## Services
 
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Anushchinnasamy&show_icons=true&hide_border=true&theme=default&count_private=true" height="165" alt="GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anushchinnasamy&layout=compact&hide_border=true&theme=default" height="165" alt="Top languages" />
-</div>
+```
+Backend System Architecture
+Microservices Development
+Database Design & Optimization
+AI Integration & RAG Systems
+Performance Tuning & Scaling
+```
 
 <br>
 
@@ -282,6 +253,6 @@ flowchart LR
 
 <div align="center">
 
-[Portfolio](https://portfolio-eta-one-1hhe8hokhj.vercel.app/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/anushchinnasamy) &nbsp;·&nbsp; [anushchinnasamy@gmail.com](mailto:anushchinnasamy@gmail.com) &nbsp;·&nbsp; [GitHub](https://github.com/Anushchinnasamy)
+[Portfolio](https://portfolio-eta-one-1hhe8hokhj.vercel.app/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/anushchinnasamy) &nbsp;·&nbsp; [LeetCode](https://leetcode.com/u/anushchinnasamy/) &nbsp;·&nbsp; [anushchinnasamy@gmail.com](mailto:anushchinnasamy@gmail.com)
 
 </div>
