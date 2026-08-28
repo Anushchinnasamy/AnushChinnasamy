@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:1A2E1A,100:0A0A0A&height=150&section=header&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:0A0A0A,40:0EA5E9,100:9FFF6E&height=150&section=header&animation=fadeIn" width="100%" />
 
 <div align="center">
 
@@ -165,4 +165,4 @@ Performance Tuning & Scaling
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:1A2E1A,100:0A0A0A&height=120&section=footer&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:9FFF6E,60:0EA5E9,100:0A0A0A&height=120&section=footer&animation=fadeIn" width="100%" />
