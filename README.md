@@ -23,54 +23,37 @@ I build distributed backend systems in Java and Spring Boot — services that ta
 
 ## Tech Stack
 
-<table>
-<tr>
-<td valign="top" width="50%">
+<div align="center">
 
-**Core Backend**
-```
-Java 17 · Spring Boot · FastAPI
-REST APIs · SQL · Microservices
-```
+**Languages & Backend**
 
-**Databases**
-```
-PostgreSQL · Neon · Cassandra
-Redis · pgvector
-```
+<img src="https://skillicons.dev/icons?i=java,spring,fastapi,nodejs,express&theme=dark" />
 
-**Messaging / Real-time**
-```
-Kafka · WebSocket · WebRTC
-Redis Pub/Sub
-```
+**Databases & Messaging**
 
-</td>
-<td valign="top" width="50%">
+<img src="https://skillicons.dev/icons?i=postgres,cassandra,redis,kafka&theme=dark" />
 
-**Resilience**
-```
-Redisson · SAGA · Idempotency Keys
-Resilience4j · Caching
-```
+**Frontend & Tools**
 
-**GenAI**
-```
-RAG · Vector Embeddings
-LLM Integration · Prompt Engineering
-AI Agents / Function Calling
-```
+<img src="https://skillicons.dev/icons?i=react,ts,git,github,vercel,idea,postman&theme=dark" />
 
 **Cloud / DevOps**
-```
-Azure (AZ-900, AZ-204) · Docker
-GitHub Actions · Harness CI/CD
-Render · Vercel
-```
 
-</td>
-</tr>
-</table>
+<img src="https://skillicons.dev/icons?i=azure,docker,githubactions&theme=dark" />
+
+</div>
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/RAG-9FFF6E?style=for-the-badge&labelColor=101210"/>
+<img src="https://img.shields.io/badge/Vector_Embeddings-9FFF6E?style=for-the-badge&labelColor=101210"/>
+<img src="https://img.shields.io/badge/LLM_Integration-9FFF6E?style=for-the-badge&labelColor=101210"/>
+<img src="https://img.shields.io/badge/AI_Agents-9FFF6E?style=for-the-badge&labelColor=101210"/>
+<img src="https://img.shields.io/badge/Resilience4j-9FFF6E?style=for-the-badge&labelColor=101210"/>
+<img src="https://img.shields.io/badge/SAGA-9FFF6E?style=for-the-badge&labelColor=101210"/>
+<img src="https://img.shields.io/badge/Redisson-9FFF6E?style=for-the-badge&labelColor=101210"/>
+
+</div>
 
 <br>
 
