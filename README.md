@@ -8,6 +8,7 @@ Building distributed backend systems — microservices, event-driven pipelines, 
 
 `Java` `Spring Boot` `Spring Cloud` `Kafka` `PostgreSQL` `Redis` `Docker` `RAG / LLMs`
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-9FFF6E?style=flat-square&logo=vercel&logoColor=black)](https://portfolio-eta-one-1hhe8hokhj.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anushchinnasamy)
 [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/Anushchinnasamy)
 [![Email](https://img.shields.io/badge/Email-000000?style=flat-square&logo=gmail&logoColor=white)](mailto:anushchinnasamy@gmail.com)
@@ -281,6 +282,6 @@ flowchart LR
 
 <div align="center">
 
-[LinkedIn](https://www.linkedin.com/in/anushchinnasamy) &nbsp;·&nbsp; [anushchinnasamy@gmail.com](mailto:anushchinnasamy@gmail.com) &nbsp;·&nbsp; [GitHub](https://github.com/Anushchinnasamy)
+[Portfolio](https://portfolio-eta-one-1hhe8hokhj.vercel.app/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/anushchinnasamy) &nbsp;·&nbsp; [anushchinnasamy@gmail.com](mailto:anushchinnasamy@gmail.com) &nbsp;·&nbsp; [GitHub](https://github.com/Anushchinnasamy)
 
 </div>
