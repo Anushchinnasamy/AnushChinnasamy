@@ -1,5 +1,3 @@
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:0A0A0A,40:0EA5E9,100:9FFF6E&height=150&section=header&animation=fadeIn" width="100%" />
-
 <div align="center">
 
 <a href="https://portfolio-eta-one-1hhe8hokhj.vercel.app/">
@@ -164,5 +162,3 @@ Performance Tuning & Scaling
 [Portfolio](https://portfolio-eta-one-1hhe8hokhj.vercel.app/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/anushchinnasamy) &nbsp;·&nbsp; [LeetCode](https://leetcode.com/u/anushchinnasamy/) &nbsp;·&nbsp; [anushchinnasamy@gmail.com](mailto:anushchinnasamy@gmail.com)
 
 </div>
-
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:9FFF6E,60:0EA5E9,100:0A0A0A&height=120&section=footer&animation=fadeIn" width="100%" />
