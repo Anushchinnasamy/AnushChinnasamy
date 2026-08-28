@@ -129,93 +129,16 @@ Earnings-truth API for Indian gig riders — real take-home after fuel/EMI/insur
 
 <br>
 
-## Architecture Showcase
+## GitHub Activity
 
-**Spicyeat** — gateway-fronted microservices, database-per-service, Kafka outbox for order/payment events:
+<div align="center">
 
-```mermaid
-flowchart LR
-    Client["React Client"] -->|HTTPS + JWT| GW["API Gateway"]
-    GW --> AUTH["Auth Service"]
-    GW --> USER["User Service"]
-    GW --> MENU["Menu Service"]
-    GW --> CART["Cart Service"]
-    GW --> ORDER["Order Service"]
-    GW --> PAY["Payment Service<br/>(Stripe)"]
-    GW --> DEL["Delivery Service"]
+<img src="https://github-readme-stats.vercel.app/api?username=Anushchinnasamy&show_icons=true&hide_border=true&bg_color=101210&title_color=9FFF6E&icon_color=9FFF6E&text_color=EDEDE8&count_private=true" height="165" alt="GitHub stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anushchinnasamy&layout=compact&hide_border=true&bg_color=101210&title_color=9FFF6E&text_color=EDEDE8" height="165" alt="Top languages" />
 
-    ORDER -.->|order events| KAFKA[("Kafka<br/>outbox")]
-    PAY -.->|payment events| KAFKA
-    KAFKA -.-> NOTIFY["Notification Service"]
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Anushchinnasamy&hide_border=true&background=101210&stroke=1E211E&ring=9FFF6E&fire=9FFF6E&currStreakLabel=9FFF6E&sideLabels=EDEDE8&currStreakNum=EDEDE8&sideNums=EDEDE8&dates=8A8D87" alt="GitHub streak stats" />
 
-    AUTH --> PG[("PostgreSQL<br/>per service")]
-    USER --> PG
-    MENU --> PG
-    CART --> PG
-    ORDER --> PG
-    PAY --> PG
-    DEL --> PG
-    MENU --> REDIS[("Redis<br/>cache")]
-    GW --> REDIS
-```
-
-**Ticket Booking System** — distributed locking guards a hot 50-seat show against a flash-sale crowd:
-
-```mermaid
-flowchart LR
-    Client["Client"] --> GW["API Gateway"]
-    GW --> USER["User Service"]
-    GW --> EVENT["Event Service"]
-    GW --> BOOK["Booking Service"]
-    GW --> PAY["Payment Service"]
-
-    BOOK -->|tryLock seat| REDIS[("Redis<br/>seat lock")]
-    BOOK -->|claim seat| EVENT
-    BOOK -.->|booking.created| KAFKA[("Kafka")]
-    KAFKA -.-> NOTIFY["Notification Service"]
-
-    USER --> PG[("PostgreSQL<br/>per service")]
-    EVENT --> PG
-    BOOK --> PG
-    PAY --> PG
-```
-
-**RecruitFlow AI** — RAG-based candidate ranking behind a full Spring Cloud stack:
-
-```mermaid
-flowchart LR
-    GW["API Gateway"] --> JOB["Job Service"]
-    GW --> CAND["Candidate Service"]
-    GW --> MATCH["Matching Service<br/>(pgvector + RAG)"]
-    MATCH -->|embed / rank| LLM["Local LLM"]
-
-    EUREKA[("Eureka<br/>service registry")] -.-> GW
-    CONFIG[("Config Server")] -.-> GW
-    ZIPKIN[("Zipkin<br/>tracing")] -.-> GW
-```
-
-**InternFlow AI** — a single state machine gates every lifecycle transition; AI actions are advisory, not autonomous:
-
-```mermaid
-flowchart LR
-    Client["React Client"] --> API["Express API<br/>(RBAC middleware)"]
-    API --> SM["transition()<br/>17-step state machine"]
-    SM --> DB[("PostgreSQL<br/>via Prisma")]
-    API -->|resume parse / eval / chatbot| LLM["LLM<br/>(logged + human-reviewed)"]
-    API --> AUDIT[("Audit trail")]
-```
-
-**Baaki (TripMeter)** — modular monolith; a transactional outbox stands in for a message broker:
-
-```mermaid
-flowchart LR
-    Client["Client"] -->|JWT| API["Spring Boot<br/>modular monolith"]
-    API --> RAW["Raw entries<br/>shift / fuel / expense"]
-    RAW --> PG[("PostgreSQL / Neon")]
-    API --> OUTBOX["Outbox table"]
-    OUTBOX -->|poller| JOBS["Async jobs"]
-    API --> REDIS[("Redis")]
-```
+</div>
 
 <br>
 
