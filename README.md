@@ -17,8 +17,7 @@
 
 ## About
 
-I build distributed backend systems in Java and Spring Boot — services that talk to each other over Kafka, own their own databases, and stay correct under concurrent load — and ship GenAI features (RAG, LLM tool-calling) on top of them.
-
+Backend engineer at Hexaware Technologies, focused on system design — how services divide responsibility and stay correct under concurrent load. Making something work once is easy; making it hold when everything arrives at the same time and half of it fails is the part I care about. Lately that means designing with LLMs in the loop — RAG, LangChain, agents that call real tools — where the hard part is never the model, it's everything around it.
 <br>
 
 ## Tech Stack
